@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calvin Mann Dev Messaging</title>
+  <meta name="description" content="Development and testing site for SMS messaging experiments." />
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; line-height: 1.5; color: #111; }
+    header, main, footer { max-width: 860px; margin: 0 auto; padding: 24px; }
+    header { padding-top: 40px; }
+    .card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 18px; background: #fff; }
+    a { color: #0b57d0; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .links a { margin-right: 16px; }
+    .muted { color: #555; }
+    code { background: #f3f4f6; padding: 2px 6px; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Calvin Mann Dev Messaging</h1>
+    <p class="muted">A small public site for software development and SMS testing.</p>
+    <p class="links">
+      <a href="./privacy.html">Privacy Policy</a>
+      <a href="./terms.html">Terms of Service</a>
+    </p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>About</h2>
+      <p>
+        This site supports development and testing of SMS messaging features (A2P messaging).
+        If you received a message from this system, it was initiated by a user action or testing workflow.
+      </p>
+
+      <h3>SMS Opt-Out</h3>
+      <p>
+        You can opt out at any time by replying <strong>STOP</strong>.
+        For help, reply <strong>HELP</strong>.
+      </p>
+
+      <h3>Contact</h3>
+      <p>
+        Email: <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>
+        <br />
+        <span class="muted">(Replace with your real support email.)</span>
+      </p>
+    </div>
+  </main>
+
+  <footer class="muted">
+    <p>
+      © <span id="y"></span> Calvin Mann Dev Messaging ·
+      <a href="./privacy.html">Privacy</a> · <a href="./terms.html">Terms</a>
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
