@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Calvin Mann Dev Messaging</title>
-  <meta name="description" content="Development and testing site for SMS messaging experiments." />
+  <title>Alfred SMS Butler Services</title>
+<meta name="description" content="Alfred SMS Butler Services provides SMS appointment and reminder notifications to users who opt in via our website." />
+
   <style>
     body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; line-height: 1.5; color: #111; }
     header, main, footer { max-width: 860px; margin: 0 auto; padding: 24px; }
@@ -19,8 +20,8 @@
 </head>
 <body>
   <header>
-    <h1>Calvin Mann Dev Messaging</h1>
-    <p class="muted">A small public site for software development and SMS testing.</p>
+    <h1>Alfred SMS Butler Services</h1>
+    <p class="muted">SMS appointment and reminder notification service.</p>
     <p class="links">
       <a href="./privacy.html">Privacy Policy</a>
       <a href="./terms.html">Terms of Service</a>
@@ -29,30 +30,40 @@
 
   <main>
     <div class="card">
-      <h2>About</h2>
+      <h2>Sign Up for SMS Reminders</h2>
+
       <p>
-        This site supports development and testing of SMS messaging features (A2P messaging).
-        If you received a message from this system, it was initiated by a user action or testing workflow.
+        Alfred SMS Butler Services sends appointment and reminder notifications via SMS to users who voluntarily opt in through this website.
       </p>
 
-      <h3>SMS Opt-Out</h3>
-      <p>
-        You can opt out at any time by replying <strong>STOP</strong>.
-        For help, reply <strong>HELP</strong>.
-      </p>
+      <form>
+        <label>Phone Number:</label><br>
+        <input type="tel" placeholder="Enter your phone number" required><br><br>
+
+        <input type="checkbox" id="consent" required>
+        <label for="consent">
+          By checking this box, you agree to receive SMS appointment reminders from
+          Alfred SMS Butler Services. Message frequency varies.
+          Message & data rates may apply. Reply STOP to unsubscribe.
+          Reply HELP for help.
+        </label><br><br>
+
+        <button type="submit">Subscribe</button>
+      </form>
 
       <h3>Contact</h3>
       <p>
-        Email: <a href="mailto:calvin@manngrp.com">support@alfredsms.com</a>
-        <br />
+        Email: <a href="mailto:calvin@manngrp.com">calvin@manngrp.com</a>
       </p>
     </div>
   </main>
 
   <footer class="muted">
     <p>
-      © <span id="y"></span> Calvin Mann Dev Messaging ·
-      <a href="./privacy.html">Privacy</a> · <a href="./terms.html">Terms</a>
+     © <span id="y"></span> Alfred SMS Butler Services ·
+    <a href="./privacy.html">Privacy</a> · 
+    <a href="./terms.html">Terms</a>
+
     </p>
   </footer>
 
